@@ -1,7 +1,8 @@
-# kafka demo
+# springboot use mongodb demo
 
-## 配置hosts文件
-xxx.xxx.xxx.xx  myvm.com
+## springboot 2.0
+there is something different when downloading file with gridfs with springboot 2.0
+
 
 
 
