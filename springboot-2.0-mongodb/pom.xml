@@ -25,7 +25,7 @@
         <oracle.jdbc.version>11.2.0.4</oracle.jdbc.version>
         <poi.version>3.11</poi.version>
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
-        <spring-security.version>3.2.5.RELEASE</spring-security.version>
+        <spring-security.version>4.2.17.RELEASE</spring-security.version>
         <freemarker.version>2.3.22</freemarker.version>
         <itextpdf-version>5.5.11</itextpdf-version>
         <itextpdf-font-version>7.0.2</itextpdf-font-version>
