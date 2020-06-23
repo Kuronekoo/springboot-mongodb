@@ -18,12 +18,12 @@ import org.springframework.data.mongodb.gridfs.GridFsTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
-import sun.misc.BASE64Encoder;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Base64;
 
 @Service
 @Slf4j
@@ -88,9 +88,8 @@ public class FileService {
             fileName = java.net.URLEncoder.encode(fileName, UTF_8_CHARSET);
         //火狐浏览器
         } else if (userAgent.contains("Firefox")) {
-            BASE64Encoder base64Encoder = new BASE64Encoder();
             fileName = "=?utf-8?B?"
-                    + base64Encoder.encode(fileName.getBytes(UTF_8_CHARSET))
+                    + Base64.getEncoder().encode(fileName.getBytes(UTF_8_CHARSET))
                     + "?=";
         //其他浏览器
         } else {
