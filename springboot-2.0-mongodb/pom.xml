@@ -29,7 +29,7 @@
         <freemarker.version>2.3.22</freemarker.version>
         <itextpdf-version>5.5.11</itextpdf-version>
         <itextpdf-font-version>7.0.2</itextpdf-font-version>
-        <commons.beanutils.version>1.9.2</commons.beanutils.version>
+        <commons.beanutils.version>1.9.4</commons.beanutils.version>
     </properties>
 
     <dependencies>
